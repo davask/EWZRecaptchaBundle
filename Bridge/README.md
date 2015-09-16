@@ -19,7 +19,7 @@ Add the recaptcha service provider to your bootstrap
 $app->register(new \EWZ\Bundle\RecaptchaBundle\Bridge\RecaptchaServiceProvider(), array(
     'ewz_recaptcha.public_key' => here_is_your_public_key,
     'ewz_recaptcha.private_key' => here_is_your_private_key,
-    'ewz_recaptcha.httpProxy' => array('here_is_your_host'),
+    'ewz_recaptcha.httpProxy' => array(here_is_your_host),
 ));
 ```
 
