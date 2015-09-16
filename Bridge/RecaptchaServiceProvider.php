@@ -51,7 +51,9 @@ class RecaptchaServiceProvider implements ServiceProviderInterface
                 $validator = new IsTrueValidator(
                     $app['ewz_recaptcha.enabled'],
                     $app['ewz_recaptcha.private_key'],
-                    $app['request_stack']
+                    $app['request_stack'],
+                    $app['ewz_recaptcha.httpProxy'],
+
                 );
 
                 return $validator;
